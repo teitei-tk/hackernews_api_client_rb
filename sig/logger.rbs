@@ -1,0 +1,10 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  class Logger < ::Logger
+    self.@default: Logger
+
+    def self.default: -> Logger?
+  end
+end
