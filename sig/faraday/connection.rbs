@@ -1,0 +1,13 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  module Faraday
+    module Connection
+      @connection: ::Faraday::Connection
+
+      private
+      def connection: -> ::Faraday::Connection
+    end
+  end
+end
