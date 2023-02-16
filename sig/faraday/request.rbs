@@ -1,0 +1,13 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  module Faraday
+    module Request
+      def get: (untyped path, ?Hash[untyped, untyped] options) -> ::Faraday::Response
+
+      private
+      def connection: -> ::Faraday::Connection
+    end
+  end
+end
