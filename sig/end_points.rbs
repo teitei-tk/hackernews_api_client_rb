@@ -1,0 +1,9 @@
+interface _FaradayRequestable
+  def get: (untyped path, ?Hash[untyped, untyped] options) -> ::Faraday::Response
+end
+
+module HackernewsApiClient
+  module EndPoints
+    include HackernewsApiClient::EndPoints::TopStories
+  end
+end

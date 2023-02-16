@@ -1,0 +1,13 @@
+# TypeProf 0.21.3
+
+# Classes
+
+module HackernewsApiClient
+  module EndPoints
+    module TopStories
+      include _FaradayRequestable
+
+      def top_stories: -> untyped
+    end
+  end
+end
