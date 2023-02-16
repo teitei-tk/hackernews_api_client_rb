@@ -4,7 +4,7 @@ target :lib do
   signature "sig"
 
   check "lib"                       # Directory name
-  library "logger"
+  collection_config "rbs_collection.yaml"
   # check "Gemfile"                   # File name
   # ignore "lib/templates/*.rb"
 
