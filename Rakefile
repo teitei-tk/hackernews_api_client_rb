@@ -21,11 +21,17 @@ task :timeline do
   ret = res.as_json.map.with_index do |item_id, i|
     item_req = HackernewsApiClient::Requests::GetItem.new(item_id: item_id)
     item_res = client.get_item(req: item_req)
-    puts item_res.as_json
+    json = item_res.as_json
 
-    if i > 30
+    puts "---------------------------------"
+    puts "title: #{json[:title]}"
+    puts "url: #{json[:url]}"
+    puts "#{json[:score]} points, by #{json[:by]}, #{Time.at(json[:time]).to_s}"
+    puts "--------------------------------"
+
+    if i >= 30
       break
     end
   end
-  puts ret
+
 end
