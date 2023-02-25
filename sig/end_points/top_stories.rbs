@@ -7,7 +7,7 @@ module HackernewsApiClient
     module TopStories
       include _FaradayRequestable
 
-      def top_stories: -> untyped
+      def top_stories: (req: HackernewsApiClient::Requests::TopStories) -> untyped
     end
   end
 end

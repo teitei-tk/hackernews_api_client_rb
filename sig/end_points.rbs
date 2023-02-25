@@ -1,5 +1,5 @@
 interface _FaradayRequestable
-  def get: (untyped path, ?Hash[untyped, untyped] options) -> ::Faraday::Response
+  def get: (String path, ?Hash[untyped, untyped] options) -> ::Faraday::Response
 end
 
 module HackernewsApiClient

@@ -1,0 +1,12 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  module Requests
+    class TopStories
+      attr_reader options: Hash[Symbol, String]
+      def initialize: (?options: Hash[Symbol, String]) -> void
+      def path: -> String
+    end
+  end
+end

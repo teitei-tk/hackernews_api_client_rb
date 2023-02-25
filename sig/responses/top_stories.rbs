@@ -1,0 +1,12 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  module Responses
+    class TopStories
+      attr_reader raw_response: ::Faraday::Response
+      def initialize: (raw: ::Faraday::Response) -> void
+      def as_json: -> Array[Integer]
+    end
+  end
+end

@@ -18,7 +18,6 @@ module HackernewsApiClient
             url = "https://hacker-news.firebaseio.com"
             ::Faraday.new(url, options) do |connection|
               connection.request :url_encoded
-              connection.response :json, content_type: /\b*$/
               connection.response :logger, HackernewsApiClient::Logger.default
               connection.adapter ::Faraday.default_adapter
             end
