@@ -1,0 +1,13 @@
+# TypeProf 0.21.3
+
+# Classes
+module HackernewsApiClient
+  module Requests
+    class GetItem
+      attr_reader item_id: Integer
+      attr_reader options: Hash[untyped, untyped]
+      def initialize: (item_id: Integer, ?options: Hash[untyped, untyped]) -> void
+      def path: -> String
+    end
+  end
+end

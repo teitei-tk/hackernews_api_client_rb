@@ -1,0 +1,13 @@
+# TypeProf 0.21.3
+
+# Classes
+
+module HackernewsApiClient
+  module EndPoints
+    module GetItem
+      include _FaradayRequestable
+
+      def get_item: (req: HackernewsApiClient::Requests::GetItem) -> HackernewsApiClient::Responses::GetItem
+    end
+  end
+end
